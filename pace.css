@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    background-image: url("./woods.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#pace-input input {
+    width: 5rem;
+    background: inherit;
+    margin-left: 2rem;
+    padding: 5px; 
+    border: 1px solid gray;
+    border-radius: 4px;
+    font-weight: bold;
+}
+#pace-input input:hover{
+    border: 1px solid black;
+    box-shadow: 0 0 1rem 0.1rem rgba(0, 0, 0, 0.3);
+}
+
+.pace-container {
+    margin-top: 2rem ;
+}
+
+.pace-input {
+    margin: 1rem;
+}
+
+#btn-convert{
+    padding: 10px 20px;
+    border: 2px solid gray;
+    border-radius: 5px;
+    box-shadow: 0.5em 0.5em 1em rgba(0,0,0,1),/*this one goes last*/
+                /* 0 0 0 2px rgb(255, 255, 255), this will give white edge */
+                0.3em 0.3em 1em rgba(0,0,0,0.3);/*this one goes first*/
+    background: inherit;  
+}
+
+    #btn-convert:hover {
+        border: 2px solid black;
+        font-weight: bolder;
+        cursor: pointer;
+
+}
+/* .finishTime-countainer h1 {
+    display: inline-block;
+}*/
+.finishTime-countainer p {
+    display: inline-block;
+    font-size: 1.5rem;
+    font-weight: bold;
+} 
+.finishTime-countainer {
+    text-align: center;
+    margin-top: 2rem;
+    background-color: rgba(194, 194, 194, 0.2);
+    width: 100%;
+}
+.finish-output {
+    display: flex;
+   
+}
+
+.finish-output h2, p {
+    margin: 2rem;
+}
+
+.pace-finish {
+    margin-bottom: 1rem;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Marathon finish time</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="pace.css">
+        
+    </head>
+    <body>
+        <div class="container">
+            <div class="pace-container" id="pace-countainer">
+                <div class="pace-heading">
+                    <h1>Running pace</h1>
+                </div>
+                <div class="pace-input" id="pace-input">
+                    <label for="pace-minutes" >Minutes:</label>
+                    <input type="number" id="pace-minutes" placeholder="XX" required min="1" max="59" autofocus>
+                    <i></i>
+                    <i></i>
+                </div>
+                <div class="pace-input" id="pace-input">
+                    <label for="pace-seconds" >Seconds:</label>
+                    <input type="number" id="pace-seconds" placeholder="XX" required min="0" max="59">
+                    <i></i>
+                    <i></i>
+                </div>
+            </div>
+            <div class="time-convert">
+                <button onclick="getFinishTime()" id="btn-convert">Get finish time</button>
+            </div>
+            <div class="finishTime-countainer" id="finishTime-countainer">
+                <div class="pace-finish" id="pace-finsh">
+                    <h1>Marathon finish time</h1>
+                </div>
+                <div class="finish-output" id="finish-output">
+                    <h2>Hours:</h2>
+                    <p id="finish-hours"></p>
+                
+                    <h2>minutes:</h2>
+                    <p id="finish-minutes"></p>
+                
+                    <h2>Seconds:</h2>
+                    <p id="finish-seconds"></p>
+            </div>
+            
+                <div class="pace-finish" id="pace-finsh">
+                    <h1>Halfmarathon finish time</h1>
+                </div>
+                <div class="finish-output" id="finish-output">
+                    <h2>Hours:</h2>
+                    <p id="halfFin-hours"></p>
+                
+                    <h2>minutes:</h2>
+                    <p id="halfFin-minutes"></p>
+                
+                    <h2>Seconds:</h2>
+                    <p id="halfFin-seconds"></p>
+            </div>
+
+        
+        <script src="pace.js" defer></script>
+    </body>
+</html>
